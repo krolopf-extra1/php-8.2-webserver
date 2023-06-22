@@ -13,9 +13,6 @@ jobs:
     - name: Create composer.json
       run: echo '{}' > composer.json
     
-    - name: Initialize Composer
-      run: composer init
-    
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
