@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Initialize Composer
-      run: composer init
+      run: composer init --yes
     
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
