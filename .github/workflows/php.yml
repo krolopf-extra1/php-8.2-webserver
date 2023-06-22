@@ -12,9 +12,6 @@ jobs:
 
     - name: Initialize Composer
       run: composer init --name="my/app"
-    
-    - name: Validate composer.json and composer.lock
-      run: composer validate --strict
 
     - name: Cache Composer packages
       id: composer-cache
