@@ -36,7 +36,7 @@ jobs:
         wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.zip
         unzip ngrok-v3-stable-linux-amd64.zip
         chmod +x ngrok
-        ./ngrok config add-authtoken ${{ secrets.NGROK_AUTH_TOKEN }}
+        ./ngrok config add-authtoken ${{ secrets.NGROK_AUTHTOKEN }}
       
     - name: Start ngrok
       run: ./ngrok http 80
