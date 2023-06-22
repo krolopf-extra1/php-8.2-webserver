@@ -10,8 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Create composer.json
+      run: echo '{}' > composer.json
+    
     - name: Initialize Composer
-      run: composer init --yes
+      run: composer init
     
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
